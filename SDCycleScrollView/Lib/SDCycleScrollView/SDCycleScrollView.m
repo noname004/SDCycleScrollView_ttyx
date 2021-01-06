@@ -43,7 +43,6 @@ NSString * const ID = @"SDCycleScrollViewCell";
 @interface SDCycleScrollView () <UICollectionViewDataSource, UICollectionViewDelegate>
 
 
-@property (nonatomic, weak) UICollectionView *mainView; // 显示图片的collectionView
 @property (nonatomic, weak) UICollectionViewFlowLayout *flowLayout;
 @property (nonatomic, strong) NSArray *imagePathsGroup;
 @property (nonatomic, weak) NSTimer *timer;
@@ -526,6 +525,7 @@ NSString * const ID = @"SDCycleScrollViewCell";
     
     if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
         TAPageControl *pageControl = (TAPageControl *)_pageControl;
+        pageControl.spacingBetweenDots = _spacingBetweenDots;
         [pageControl sizeToFit];
     }
     

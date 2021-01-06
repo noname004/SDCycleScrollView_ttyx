@@ -81,6 +81,8 @@ typedef enum {
 @interface SDCycleScrollView : UIView
 
 
+@property (nonatomic, weak) UICollectionView *mainView; // 显示图片的collectionView
+
 /** 初始轮播图（推荐使用） */
 + (instancetype)cycleScrollViewWithFrame:(CGRect)frame delegate:(id<SDCycleScrollViewDelegate>)delegate placeholderImage:(UIImage *)placeholderImage;
 
@@ -171,6 +173,9 @@ typedef enum {
 
 /** 当前分页控件小圆标颜色 */
 @property (nonatomic, strong) UIColor *currentPageDotColor;
+
+/** 当前分页控件小圆标间距*/
+@property (nonatomic, assign) CGFloat spacingBetweenDots;
 
 /** 其他分页控件小圆标颜色 */
 @property (nonatomic, strong) UIColor *pageDotColor;
