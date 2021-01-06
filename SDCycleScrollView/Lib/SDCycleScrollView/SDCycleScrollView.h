@@ -55,11 +55,11 @@ typedef enum {
 /** 点击图片回调 */
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index;
 
-/** 图片滚动回调 */
+/** 图片滚动到第几页回调 */
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didScrollToIndex:(NSInteger)index;
 
-
-
+/** 图片滚动回调 */
+- (void)cycleScrollView_ttyxDidScroll:(UIScrollView *) cycleScrollView;
 
 
 

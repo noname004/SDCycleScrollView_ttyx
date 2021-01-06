@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "SDCycleScrollView_ttyx"
-s.version      = "0.0.1"
+s.version      = "0.0.2"
 s.summary      = "基于SDCycleScrollView的一些小修改"
 
 s.homepage     = "https://github.com/gsdios/SDCycleScrollView"
@@ -26,3 +26,4 @@ s.requires_arc = true
 s.dependency 'SDWebImage', '>= 5.0.0'
 
 end
+
