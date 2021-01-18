@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "SDCycleScrollView_ttyx"
-s.version      = "0.0.2"
+s.version      = "0.0.3"
 s.summary      = "基于SDCycleScrollView的一些小修改"
 
 s.homepage     = "https://github.com/gsdios/SDCycleScrollView"
